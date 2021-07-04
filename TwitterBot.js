@@ -1,11 +1,11 @@
 const twit = require('twit');
 
+/** @module TwitterBot */
+/** @class */
 class TwitterBot {
   /**
    * Creates new twit object.
    * @constructor
-   * 
-   * @class
    * 
    * @param  { string } consumer_key - Application's (bot) consumer key.
    * @param  { string } consumer_secret - Application's consumer secret.
@@ -24,7 +24,7 @@ class TwitterBot {
   /**
    * Updates the authenticating user's current status, also known as Tweeting.
    * 
-   * @link  https://developer.twitter.com/en/docs/twitter-api/v1/tweets/search/api-reference/get-search-tweets
+   * @link  https://developer.twitter.com/en/docs/twitter-api/v1/tweets/post-and-engage/api-reference/post-statuses-update
    * 
    * @param  { string } status - The text of the status update. URL encode as necessary. t.co link wrapping will affect character counts.	
    * @param  { JSON }   params - Additional optional parameters.
@@ -53,15 +53,34 @@ class TwitterBot {
     });
   }
 
+
+  /**
+   * Post a Tweet containing a URL.
+   * 
+   * @link  https://developer.twitter.com/en/docs/twitter-api/v1/tweets/post-and-engage/api-reference/post-statuses-update
+   * 
+   * @param  { string } url -
+   * @param  { string | null } status -
+   * @param  { JSON | null } params -
+   * 
+   * @return { Promise } Returns response data or an error.
+   */
+  _postLink(url, status=null, params=null) {
+
+  }
+
   /**
    * (In development) Reply as a comment to a particular Tweet. Can omit in_reply_to_status_id in params.
+   * 
+   * @link  https://developer.twitter.com/en/docs/twitter-api/v1/tweets/post-and-engage/api-reference/post-statuses-update
+   * 
    * @param  { string } status
    * @param  { string } id
    * @param  { JSON }   params
    * 
-   * @return  { Promise } 
+   * @return  { Promise } Returns response data or an error.
    */
-  _replyToTweet(status, id, params) {
+  _replyToTweet(status, id, params=null) {
     return new Promise((resolve, reject) => {
 
     });

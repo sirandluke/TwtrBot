@@ -2,7 +2,7 @@
 
 TwitterBot is a simple Node module that allows developers to build a Twitter bot via the Twitter API in conjunction with the [twit module](https://github.com/ttezel/twit). Using an object-oriented approach, TwitterBot makes calling functions more intuitive, resulting in cleaner and easier to understand code.
 
-TwitterBot arose from a personal need to encapsulate popular actions such as posting a status, retweeting a status, and searching for statuses, into a set of methods for better code maintainability and efficiency.
+TwitterBot arose from a personal need to encapsulate popular actions such as posting a status, retweeting a status, and searching for statuses, into a set of methods for better efficiency and code maintainability.
 
 ## Instillation
 
