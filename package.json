@@ -1,0 +1,27 @@
+{
+  "name": "twitterbot",
+  "version": "1.0.0",
+  "description": "A simple Node module that allows developers to build a Twitter bot easily via the Twitter API.",
+  "main": "TwitterBot.js",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sirandluke/TwitterBot.git"
+  },
+  "author": "Luke Sirand",
+  "keywords": [
+    "twitter",
+    "api",
+    "twit",
+    "bot"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sirandluke/TwitterBot/issues"
+  },
+  "homepage": "https://github.com/sirandluke/TwitterBot#readme",
+  "dependencies": {
+    "twit": "^2.2.11"
+  }
+}
