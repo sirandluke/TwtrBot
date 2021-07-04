@@ -1,7 +1,7 @@
 {
   "name": "twitterbot",
   "version": "1.0.0",
-  "description": "A simple Node module that allows developers to build a Twitter bot easily via the Twitter API.",
+  "description": "A simple Node module that allows developers to build a Twitter bot easily via the Twitter API and twit module.",
   "main": "TwitterBot.js",
   "scripts": {
   },
@@ -16,7 +16,7 @@
     "twit",
     "bot"
   ],
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/sirandluke/TwitterBot/issues"
   },
