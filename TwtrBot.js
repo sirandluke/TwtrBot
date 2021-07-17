@@ -1,8 +1,8 @@
 const twit = require('twit');
 
-/** @module TwitterBot */
+/** @module TwtrBot */
 /** @class */
-class TwitterBot {
+class TwtrBot {
   /**
    * Creates new twit object.
    * @constructor
@@ -13,7 +13,7 @@ class TwitterBot {
    * @param  {string} access_token_secret - Application's token secret.
    * 
    * @example 
-   * const MyBot = new TwitterBot('www', 'xxx', 'yyy', 'zzz');
+   * const MyBot = new TwtrBot('www', 'xxx', 'yyy', 'zzz');
    */
   constructor(consumer_key, consumer_secret, access_token, access_token_secret) {
     this.twit = new twit({
@@ -208,4 +208,4 @@ class TwitterBot {
   }
 }
 
-module.exports = TwitterBot;
+module.exports = TwtrBot;

@@ -1,12 +1,12 @@
-# TwitterBot
+# TwtrBot
 
-TwitterBot is a simple Node module that allows developers to build a Twitter bot via the Twitter API in conjunction with the [twit module](https://github.com/ttezel/twit). Using an object-oriented approach, TwitterBot makes calling functions more intuitive, resulting in cleaner and easier to understand code.
+Twtrbot is a simple Node module wrapper that allows developers to build a Twitter bot via the Twitter API in conjunction with the [twit module](https://github.com/ttezel/twit). Using an object-oriented approach, TwtrBot makes calling functions more intuitive, resulting in cleaner and easier to understand code.
 
-TwitterBot arose from a personal need to encapsulate popular actions such as posting a status, retweeting a status, and searching for statuses, into a set of methods for better efficiency and code maintainability.
+TwtrBot arose from a personal need to encapsulate popular actions such as posting a status, retweeting a status, and searching for statuses, into a set of methods for better efficiency and code maintainability.
 
 ## Instillation
 
-`npm i twitterbot --save`
+`npm i twtrbot --save`
 
 ## Usage
 
@@ -20,8 +20,8 @@ JSDoc highlighting with link to corresponding Twitter API reference:
 ### Example Snippet
 
 ```JavaScript
-const TwitterBot  = require('./TwitterBot');
-const MyBot = new TwitterBot(CONSUMER_KEY CONSUMER_SECRET, ACCESS_TOKEN, ACCESS_SECRET);
+const TwtrBot  = require('./TwtrBot');
+const MyBot = new TwtrBot(CONSUMER_KEY CONSUMER_SECRET, ACCESS_TOKEN, ACCESS_SECRET);
 
 MyBot.postTweet("Hello world!");  // Post a Tweet
 
@@ -46,13 +46,13 @@ MyBot.twit.stream('statuses/filter', { track: 'oolong milk tea' });
 Import the module:
 
 ```JavaScript
-const TwitterBot  = require('./TwitterBot');  // Import module
+const TwtrBot  = require('./TwtrBot');  // Import module
 ```
 
 Initialize your bot object:
 
 ```JavaScript
-const MyBot = new TwitterBot(CONSUMER_KEY CONSUMER_SECRET, ACCESS_TOKEN, ACCESS_SECRET);  // Initialize bot.
+const MyBot = new TwtrBot(CONSUMER_KEY CONSUMER_SECRET, ACCESS_TOKEN, ACCESS_SECRET);  // Initialize bot.
 ```
 
 You can find find all your credentials over at <https://developer.twitter.com/>, under the `Projects & Apps` tab.
@@ -60,7 +60,7 @@ You can find find all your credentials over at <https://developer.twitter.com/>,
 Posting your first Tweet (aka status):
 
 ```JavaScript
-const MyBot = new TwitterBot(CONSUMER_KEY CONSUMER_SECRET, ACCESS_TOKEN, ACCESS_SECRET);
+const MyBot = new TwtrBot(CONSUMER_KEY CONSUMER_SECRET, ACCESS_TOKEN, ACCESS_SECRET);
 
 MyBot.postTweet("Hello world!");  // Post a Tweet
 ```
