@@ -94,6 +94,13 @@ Accessing the twit object to perform uncovered functions in the module:
 MyBot.twit.stream('statuses/filter', { track: 'oolong milk tea' })
 ```
 
+## Bots Created with TwtrBot
+
+- [@summrs_bot](https://twitter.com/summrs_bot)
+
+- [@capoglogangbot](https://twitter.com/capoglogangbot)
+
+
 ## Contributing
 
 Feel free to make any changes and submit a pull request!
