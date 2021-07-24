@@ -1,6 +1,6 @@
 {
   "name": "twtrbot",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple Node module wrapper that allows developers to build a Twitter bot easily via the Twitter API and twit module.",
   "main": "TwtrBot.js",
   "scripts": {

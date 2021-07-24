@@ -26,9 +26,11 @@ const MyBot = new TwtrBot(CONSUMER_KEY CONSUMER_SECRET, ACCESS_TOKEN, ACCESS_SEC
 MyBot.postTweet("Hello world!");  // Post a Tweet
 
 let params = {
-  attachment_url: 'https://github.com/sirandluke',
-}
-MyBot.postTweet("Check out my Github!", params);
+  lat: 34.052235,
+  long:  -​118.243683
+};
+
+MyBot.postTweet('Hello from Los Angeles!', params);
 
 MyBot.searchTweets("oat milk latte").then(async (data) => {
   let tweets = data.statuses;
@@ -46,13 +48,13 @@ MyBot.twit.stream('statuses/filter', { track: 'oolong milk tea' });
 Import the module:
 
 ```JavaScript
-const TwtrBot  = require('./TwtrBot');  // Import module
+const TwtrBot  = require('./TwtrBot');
 ```
 
 Initialize your bot object:
 
 ```JavaScript
-const MyBot = new TwtrBot(CONSUMER_KEY CONSUMER_SECRET, ACCESS_TOKEN, ACCESS_SECRET);  // Initialize bot.
+const MyBot = new TwtrBot(CONSUMER_KEY CONSUMER_SECRET, ACCESS_TOKEN, ACCESS_SECRET);
 ```
 
 You can find find all your credentials over at <https://developer.twitter.com/>, under the `Projects & Apps` tab.
@@ -60,8 +62,6 @@ You can find find all your credentials over at <https://developer.twitter.com/>,
 Posting your first Tweet (aka status):
 
 ```JavaScript
-const MyBot = new TwtrBot(CONSUMER_KEY CONSUMER_SECRET, ACCESS_TOKEN, ACCESS_SECRET);
-
 MyBot.postTweet("Hello world!");  // Post a Tweet
 ```
 
@@ -69,9 +69,11 @@ Posting a Tweet passing optional parameters:
 
 ```JavaScript
 let params = {
-  attachment_url: 'https://github.com/sirandluke',
-}
-MyBot.postTweet("Check out my Github!", params);
+  lat: 34.052235,
+  long:  -​118.243683
+};
+
+MyBot.postTweet('Hello from Los Angeles!', params);
 ```
 
 Searching tweets based on a query and retweeting those tweets:

@@ -29,7 +29,7 @@ class TwtrBot {
    * 
    * @link  https://developer.twitter.com/en/docs/twitter-api/v1/tweets/post-and-engage/api-reference/post-statuses-update
    * 
-   * @param  {string} status - The text of the status update. URL encode as necessary. t.co link wrapping will affect character counts.	
+   * @param  {string} status - The text of the status update. URL encode as necessary. t.co link wrapping will affect character counts.
    * @param  {Object} [params] - Additional optional parameters.
    * 
    * @example
@@ -65,9 +65,9 @@ class TwtrBot {
    * 
    * @link  https://developer.twitter.com/en/docs/twitter-api/v1/tweets/post-and-engage/api-reference/post-statuses-update
    * @readonly
-   * @param  {string} url -
-   * @param  {string} [status] -
-   * @param  {Object} [params] -
+   * @param  {string} url - Tweet permalink or direct message deep link
+   * @param  {string} [status] - The text of the status update. URL encode as necessary. t.co link wrapping will affect character counts.
+   * @param  {Object} [params] - Additional optional parameters.
    *
    * @example
    * MyBot.postLink('https://www.youtube.com/watch?v=Vp8fhW3Q4c8');
@@ -150,7 +150,6 @@ class TwtrBot {
     });
   }
 
-  
   /**
    * Provides a simple, relevance-based search interface to public user accounts on Twitter.
    * 
